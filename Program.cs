@@ -9,7 +9,7 @@ namespace Countdown
          static void Main(string[] args)
         {
             Countdown clock = new Countdown();
-           
+           string input = "";
             do
             {
                 Console.WriteLine("Tryck på en tangent för att starta");
@@ -21,15 +21,15 @@ namespace Countdown
                     Console.Write(".");
                     Thread.Sleep(500);
                 } 
-                Countdown.RandomSleep();
-
+                clock.RandomSleep();
+                Console.Clear();
                 Console.WriteLine("Tryck igen...NU!");
-                Countdown.StartTimer();
-   
-                Console.WriteLine("Din reaktionstid är:"+Countdown.StopTimer());
+                clock.StartTimer();
+                Console.ReadLine();
+                Console.WriteLine("Din reaktionstid är: "+clock.StopTimer().Milliseconds+" ms!");
 
                 Console.WriteLine("För att avsluta, tryck 'q', annars tryck något annat");
-                var input = Console.ReadLine();
+                input = Console.ReadLine();
             }
             while (input != "q");
 
