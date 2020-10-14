@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Countdown
+namespace lessson6_pause_program
 {
     class Program
     {
@@ -21,12 +21,12 @@ namespace Countdown
                     Console.Write(".");
                     Thread.Sleep(500);
                 } 
-                TimeMeasurement.Pause();
+                Countdown.RandomSleep();
 
                 Console.WriteLine("Tryck igen...NU!");
-                TimeMeasurement.StartStopWatch();
+                Countdown.StartTimer();
    
-                Console.WriteLine("Din reaktionstid är:"+TimeMeasurement.StopStopWatch());
+                Console.WriteLine("Din reaktionstid är:"+Countdown.StopTimer());
 
                 Console.WriteLine("För att avsluta, tryck 'q', annars tryck något annat");
                 var input = Console.ReadLine();
