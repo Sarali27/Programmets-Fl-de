@@ -8,7 +8,7 @@ namespace Countdown
         
          static void Main(string[] args)
         {
-            TimeMeasurement clock = new TimeMeasurement();
+            Countdown clock = new Countdown();
            
             do
             {
