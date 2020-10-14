@@ -16,4 +16,4 @@ namespace Countdown
             return highscore;    
         }    
     }    
-}
+}                //File.WriteAllText ("data.csv", "text att lägga till")
