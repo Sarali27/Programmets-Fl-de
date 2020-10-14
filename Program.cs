@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace lessson6_pause_program
+namespace Countdown
 {
     class Program
     {
