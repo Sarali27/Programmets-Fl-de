@@ -5,7 +5,7 @@ namespace Countdown
 {
     class Program
     {
-        GCNotificationStatus
+        
          static void Main(string[] args)
         {
             TimeMeasurement clock = new TimeMeasurement();
