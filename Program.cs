@@ -22,11 +22,16 @@ namespace Countdown
                     Thread.Sleep(500);
                 } 
                 clock.RandomSleep();
+               
                 Console.Clear();
                 Console.WriteLine("Tryck igen...NU!");
                 clock.StartTimer();
                 Console.ReadLine();
-                Console.WriteLine("Din reaktionstid är: "+clock.StopTimer().Milliseconds+" ms!");
+               
+               
+                int score = clock.StopTimer().Milliseconds;
+               
+                Console.WriteLine("Din reaktionstid är: "+ score +" ms!");
 
                 Console.WriteLine("För att avsluta, tryck 'q', annars tryck något annat");
                 input = Console.ReadLine();
