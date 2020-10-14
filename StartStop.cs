@@ -1,11 +1,10 @@
-﻿using System;
-// TODO: Vilka usings krävs för Random och TimeSpan? "using System" fungerar som någon slags "allt-i-allo".
+﻿using System;                   // TODO: Vilka usings krävs för Random och TimeSpan? "using System" fungerar som någon slags "allt-i-allo".
 using System.Diagnostics;       // Stopwatch
 using System.Threading;
 
-namespace lessson6_pause_program
+namespace Countdown
 {
-    class Countdown
+    internal class Countdown
     {
         private Random random = new Random();
         private Stopwatch stopwatch = new Stopwatch();
