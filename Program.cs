@@ -1,26 +1,38 @@
 ﻿using System;
+using System.Threading;
 
 namespace Countdown
 {
     class Program
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
-            Start();
+            TimeMeasurement clock = new TimeMeasurement();
 
-            static void Start()
+            do
             {
-                Console.Read();
-        
+                Console.WriteLine("Tryck på en tangent för att starta");
+                Console.ReadLine();
+                Console.Write("Vänta lite");
+                
+                for (int i=0; i < 3; i++)
+                {
+                    Console.Write(".");
+                    Thread.Sleep(500);
+                } 
+                TimeMeasurement.Pause();
+
+                //text
+
+                TimeMeasurement.StartStopWatch()
+   
+                //text
+
+                //stoppa 
             }
-        {
-            Console.WriteLine("Vänta lite");
+            while (var input != "q");
+
+
         }
-        
-        }
-    
-
-
-
     }
 }
